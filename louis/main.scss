@@ -1,0 +1,166 @@
+$darkgreen: #006f23;
+$lightgreen: #02a635;
+$bg: #fbfbf2;
+$action: #93032E;
+$dark: #172a16;
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  color: #172a16;
+  background: $bg;
+}
+img {
+  max-width: 100%;
+}
+.fa {
+  margin-right: 12px;
+}
+
+#logo {
+  fill: black;
+  #logo-point,
+  #logo-of {
+    fill: $darkgreen;
+  }
+  #logo-work {
+    fill: $lightgreen;
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 40px 0 20px 0;
+  //border-bottom: 1px solid black;
+  background: $bg;
+  z-index: 999;
+  box-shadow: 0 30px 30px 0 $bg;
+  a.logo {
+    display: block;
+    float: left;
+    width: 300px;
+  }
+  h1 {
+    float: right;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.6em;
+    margin-top: 8px;
+    margin-left: 40px;
+  }
+  h1::before {
+    //content: "\\";
+    position: absolute;
+    left: -30px;
+    top: -17px;
+    font-size: 1.6em;
+    font-weight: 400;
+  }
+}
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  p {
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  p a {
+    color: $lightgreen;
+    border-bottom: 1px dotted $lightgreen;
+    text-decoration: none;
+  }
+  em {
+    background-color: rgba(255, 246, 161, 0.49);
+  }
+  h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  .help {
+    cursor: help;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  }
+  .slogan {
+    margin-top: 160px;
+    background: $dark;
+    background-image: url(img/layout/arrow.png);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    h1 {
+      //background-color: rgba(0,0,0,.4);
+      padding: 50px 70px 60px 50px;
+      color: $bg;
+      font-weight: 600;
+      font-size: 2.2em;
+      line-height: 1.4;
+    }
+  }
+  .wie-1 {
+    margin-top: 20px;
+    font-weight: 300;
+  }
+  .waarom {
+    margin: 60px auto;
+    p {
+      padding: 20px 30px;
+      border-left: 1px solid black;
+      font-size: 1.4em;
+    }
+  }
+  .wat {
+    margin: 60px auto;
+  }
+  .wie-2 {
+    .profile {
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+      margin-top: 20px;
+    }
+    .col-30 {
+      float: left;
+      width: 30%;
+    }
+    .col-70 {
+      box-sizing: border-box;
+      float: left;
+      width: 70%;
+      padding-left: 30px;
+    }
+  }
+  .inspiratie {
+    font-weight: 300;
+    span {
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+}
+footer {
+  color: $bg;
+  background-color: $dark;
+  padding: 50px 0;
+  font-size: .8em;
+  margin-top: 80px;
+  text-align: center;
+}
