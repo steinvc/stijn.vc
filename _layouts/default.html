@@ -5,7 +5,7 @@
 |_____||____|__|  ||__|__|__\___/|____|
 			|___|
 
-(c) 2015 Stijn van Cuijk
+(c) 2016 Stijn van Cuijk
 -->
 
 
@@ -15,43 +15,10 @@
 	{% include head.html %}
 </head>
 <body>
-	<div class="gray-plane"></div>
-		{% include header.html %}
-	<div class="wrapper animated fade-in-up">
-		{{ content }}
-	  <script>
-	    $(".page").fitVids();
-	    $('.page p').each(function(i){
-				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
-					$(this).addClass('img-only');
-				}
-	  	});
-			$('video').each(function(){
-					if ($(this).is(":in-viewport")) {
-							$(this)[0].play();
-					} else {
-							$(this)[0].pause();
-					}
-			})
-			$(document).on( 'scroll', function(){
-				$('video').each(function(){
-						if ($(this).is(":in-viewport")) {
-								$(this)[0].play();
-						} else {
-								$(this)[0].pause();
-						}
-				})
-			});
-
-	  </script>
+	<div class="wrapper">
+		<header>{% include header.html %}</header>
+		<main>{{ content }}</main>
 		{% include footer.html %}
-	</div>
-
-	<div style="display: none;" id="slideshow">
-		<ul class="bxslider">
-
-		</ul>
-	  <a class="close">×</a>
 	</div>
 </body>
 </html>

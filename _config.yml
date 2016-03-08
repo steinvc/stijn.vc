@@ -1,11 +1,11 @@
 
 # The name of your website.
-name: Portfolio Stijn van Cuijk
+name: Stijn van Cuijk — Design
 
 description:
 
   # Description of your site. This will show up in google.
-  meta: Portfolio site van Stijn van Cuijk, aspirerend ontwerper op het gebied van product, graphic en web design.
+  meta: Persoonlijke website van Stijn van Cuijk.
 
 author:
   name: Stijn van Cuijk # Change this!
@@ -70,7 +70,6 @@ paypal:
 # You don't have to change these.
 
 exclude: [vendor]
-highlighter: pygments
 kramdown:
   input: GFM
 paginate_path: "/page-:num/"
@@ -79,6 +78,6 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: ""
     values:
-      layout: "portfolio-page"
+      layout: "default"
