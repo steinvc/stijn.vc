@@ -91,9 +91,9 @@ a.fa:hover {
   -o-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
-.logo:hover,
-.logo:focus {
-  opacity: 1;
+img.logo:hover,
+img.logo:focus {
+  opacity: 1 !important;
 }
 footer {
   margin-bottom: 35px;
