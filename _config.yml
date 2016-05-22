@@ -28,10 +28,10 @@ lang: nl_NL
 ##############
 
 # Toolbar color for Chrome on Android.
-theme-color-attr: "#fa4343"
+theme-color-attr: "#ff4b27"
 
 # Color of Microsoft live Tile.
-ms-tile-color: "#fa4343"
+ms-tile-color: "#ff4b27"
 
 # Number of posts on each page.
 paginate: 100
