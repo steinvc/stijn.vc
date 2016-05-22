@@ -79,9 +79,9 @@ body {
 @keyframes slideUp { from { -ms-transform: translateX(0px) translateY(50px); transform: translateX(0px) translateY(50px); } to { -ms-transform: translateX(0px) translateY(0px); transform: translateX(0px) translateY(0px); } }
 
 main, footer {
-  -webkit-animation: slideUp ease-out 1;
-  -moz-animation: slideUp ease-out 1;
-  animation: slideUp ease-out 1;
+  -webkit-animation: slideUp cubic-bezier(0.000, 0.850, 0.300, 1.000) 1;
+  -moz-animation: slideUp cubic-bezier(0.000, 0.850, 0.300, 1.000) 1;
+  animation: slideUp cubic-bezier(0.000, 0.850, 0.300, 1.000) 1;
   -webkit-animation-duration:1s;
   -moz-animation-duration:1s;
   animation-duration:1s;
@@ -121,9 +121,9 @@ a.fa:hover {
   background-image: url(/img/overlay_logo.png), url(/img/tilburg.jpg);
   background-size: 20%, cover;
   background-position: bottom right, top;
-  -webkit-animation: moveHeader ease-out 1;
-	-moz-animation: moveHeader ease-out 1;
-	animation: moveHeader ease-out 1;
+  -webkit-animation: moveHeader cubic-bezier(0.000, 0.850, 0.300, 1.000) 1;
+	-moz-animation: moveHeader cubic-bezier(0.000, 0.850, 0.300, 1.000) 1;
+	animation: moveHeader cubic-bezier(0.000, 0.850, 0.300, 1.000) 1;
   -webkit-animation-duration:1s;
 	-moz-animation-duration:1s;
 	animation-duration:1s;
