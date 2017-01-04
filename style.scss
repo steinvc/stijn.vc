@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'rams';
+    src: url('3_rams-regular-webfont.woff2') format('woff2'),
+         url('3_rams-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rams';
+    src: url('1_rams-bold-webfont.woff2') format('woff2'),
+         url('1_rams-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'stijn';
+    src: url('stijnbold-webfont.woff2') format('woff2'),
+         url('stijnbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  font-family: "rams";
+  font-size: 22px;
+  line-height: 1.5;
+  color: white;
+  background-color: #636466;
+  img {
+    margin-top: 1.8em;
+    max-width: 100%;
+    display: block;
+    opacity: .5;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+  }
+  .wrap {
+    max-width: 600px;
+    padding: 30px;
+    header {
+      margin-bottom: 1.5em;
+      h2 {
+        font-family: "stijn";
+        font-size: 1.2em;
+        margin-bottom: -.6em;
+        //line-height: 1;
+      }
+    }
+    h1 {
+      font-size: 1.2em;
+    }
+    .content {
+      p {
+        margin-bottom: 1.5em;
+      }
+      em {
+        font-weight: bold;
+      }
+      p.caption {
+        margin-top: .5em;
+        font-size: .7em;
+        opacity: .5;
+      }
+    }
+  }
+}
