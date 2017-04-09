@@ -101,6 +101,8 @@
       }
       $('button').on("click", function() {
         $('.result').html(run($('#value').val(), $('#master').val()));
+        $('#value').val('');
+        $('#master').val('');
       });
     </script>
   </body>
