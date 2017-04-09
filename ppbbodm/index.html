@@ -75,7 +75,7 @@
   <body>
 
     <div class="box">
-      <input placeholder="Master password" id="master" class="input" type="password" pattern="\d*" inputmode="numeric" value="">
+      <input placeholder="Master password" id="master" class="input" type="number" pattern="[0-9]*" inputmode="numeric" min="1111" max="9999" style="-webkit-text-security: disc;" autofocus />
       <input placeholder="Value" id="value" class="input" type="password" value="">
       <button>Generate</button>
       <div class="result"><span>...</span></div>
